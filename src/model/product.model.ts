@@ -1,15 +1,28 @@
+import { Column, DataType, Table } from "sequelize-typescript";
+import { Model } from "sequelize/types";
+
+@Table
 /*
 * Definição da estrutura da classe Product
 */
-export class Product {
-    id: number;
+export class Product extends Model<Product> {
+
+    @Column({
+        type: DataType.STRING(60),
+        allowNull: false
+    })
     code: string;
+
+    @Column({
+        type: DataType.STRING,
+        allowNull:false,
+    })
     name: string;
+
+    @Column({
+        type: DataType. DECIMAL(10, 2),
+        allowNull: false
+    })
     price:number;
 
-    constructor(code: string, name: string, price: number) {
-        this.code = code;
-        this.name = name;
-        this.price = price;
-    }
 }

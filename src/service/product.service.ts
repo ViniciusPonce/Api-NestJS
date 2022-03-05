@@ -4,9 +4,9 @@ import { Product } from './../model/product.model';
 @Injectable()
 export class ProductService {
     products: Product[] = [
-        new Product("LIV01", "Livro TDD e BDD na prática", 29.90),
-        new Product("LIV02", "Iniciando com Flutter", 39.90),
-        new Product("LIV03", "Inteligência artificial como serviço", 29.90),
+        // new Product("LIV01", "Livro TDD e BDD na prática", 29.90),
+        // new Product("LIV02", "Iniciando com Flutter", 39.90),
+        // new Product("LIV03", "Inteligência artificial como serviço", 29.90),
     ];
 
     findAll(): Product[] {

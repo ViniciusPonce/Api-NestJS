@@ -2,8 +2,6 @@ import { ProductService } from './../service/product.service';
 import { Product } from './../model/product.model';
 import { Body, Controller, Delete, Get, Param, Post, Put } from "@nestjs/common";
 
-
-
 @Controller('products')
 export class ProductsController {
 
